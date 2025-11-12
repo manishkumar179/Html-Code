@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: beige;
+    display: flex;
+    flex-wrap:wrap;
+    overflow: hidden;
+    padding-left: 140px;
+}
+
+#d1{
+    height: 300px;
+    width: 300px;
+    margin:20px 30px;
+    overflow: hidden;
+    position: relative; 
+    border-radius: 10px;
+
+}
+
+#d1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all ease 0.7s;
+}
+
+#d1 #overlay{
+    position: absolute;
+    top: 0;
+
+    height: 100%;
+    width: 100%;
+    background:rgba(184, 184, 184, 0.5);
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.8px red;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    opacity: 0;
+    transition: all ease 0.8s;
+
+    
+}
+
+#d1:hover img{
+    transform: scale(1.2);
+    
+}
+
+#d1:hover #overlay{
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+

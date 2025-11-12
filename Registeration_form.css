@@ -1,0 +1,83 @@
+#b1{
+    background-color: lightblue;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 10px;
+    border: 2px solid blue;
+    border-radius: 10px;
+    border-color: brown;
+}
+
+form{
+    margin: auto;
+    width: 700px;
+}
+label{
+    display: inline-block;
+    width: 150px;  
+}
+
+input{
+    
+    margin: 5px 0;
+}
+#roll_number{
+    width: 350px;
+
+}
+#studentName1{
+    width: 155px;
+}
+#fatherName{
+    width: 350px;
+}
+#dob{
+    width: 70px;
+}
+#dob1{
+    width: 70px;
+}
+#dob2{
+    width: 85px;
+}
+#mobileNumber{
+    width: 40px;
+}
+#mobileNumber1{
+    width: 305px;
+}
+#email-id{
+    width: 375px;
+}
+#pass{
+    width: 370px;
+}
+#Gender{
+    margin-left: 0px;
+}
+#depart{
+    width: 42px;
+}
+#course{
+    width: 400px;
+}
+#photo{
+    width: 358px;
+}
+#city{
+    width: 373px;
+
+}
+#address{
+    width: 388px;
+    height: 50px;
+}
+
+#depar4{
+    position: absolute;
+    left: 37%;
+}
+#depar5{
+    position: absolute;
+    left: 48.4%;
+}

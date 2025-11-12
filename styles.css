@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main h1 {
+  color: blue;
+}
+main button {
+  padding: 15px 30px;
+  font-size: 30px;
+  border-radius: 20px;
+  border: none;
+  background-color: aqua;
+  color: red;
+  margin: 20px 30px;
+  cursor: pointer;
+}
+
+button.red {
+  padding: 15px 30px;
+  font-size: 30px;
+  border-radius: 20px;
+  border: none;
+  background-color: red;
+  color: white;
+  margin: 20px 30px;
+  cursor: pointer;
+}
+
+button.blue {
+  padding: 15px 30px;
+  font-size: 30px;
+  border-radius: 20px;
+  border: none;
+  background-color: blue;
+  color: white;
+  margin: 20px 30px;
+  cursor: pointer;
+}/*# sourceMappingURL=styles.css.map */

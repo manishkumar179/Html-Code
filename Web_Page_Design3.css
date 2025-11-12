@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff29;
+}
+
+#nav{
+    height:15%;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+
+#nav #part2{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+}
+
+#part1 button{
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    
+}
+
+#part1 button:hover{
+    background: linear-gradient(blue);
+    background-clip: text;
+    color: transparent;
+}
+
+
+
+#part2 h3{
+    font-size: 17px;
+    font-weight: 550;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#center{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#center img{
+    height: 150px;
+    width: 150px;
+    transition: all ease 0.4s;
+
+}
+
+#center img:hover{
+   transform: scale(1.2);
+   cursor: pointer;
+
+}
+
+
+
+#center h2{
+    font-size: 30px;
+    text-align: center;
+    font-family: 900;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#center h1{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 750;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all ease 0.6s;
+    cursor: pointer;
+    
+}
+
+#center h1:hover{
+    background-image: url(https://images.unsplash.com/photo-1628273321790-8db61d09f060?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDg3fHxjb2xvcmZ1bGwlMjBzbW9rZXxlbnwwfHwwfHx8MA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    color: transparent;
+}
+
+#center p{
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+#center button{
+    font-size: 20px;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 33px;
+    border-radius: 45px;
+    border: none;
+    color: white;
+    background-color: black;
+    transition: all ease 0.7s;
+}
+
+#center button:hover{
+    background: linear-gradient(yellow,pink,royalblue);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    box-shadow: 8px 5px 10px black;
+}

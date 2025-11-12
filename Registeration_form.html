@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration </title>
+    <link rel="stylesheet" href="Registeration_form.css">
+</head>
+<body>
+  <div id="b1">      
+    
+    
+   <form>
+        <header>Registeration Form</header>
+    <br>
+    <br><br>
+    <label for="roll_number">Roll Number: </label>
+    <input type="number" id="roll_number" placeholder="Enter Roll No.">
+    <br>
+    <br>    
+    <label for="studentName">Student Name: </label>
+    <input type="text" id="studentName" placeholder="First Name"> -
+    <input type="text" id="studentName" placeholder="Last Name">
+    <br>
+    <br>
+    <label for="fatherName">Father Name: </label>
+    <input type="text" id="fatherName" placeholder="Father Name">
+    <br>
+    <br>
+      
+    <label for="dob">Date of birth: </label>
+    <input type="number" id="dob" placeholder="Day">-
+    <input type="number" id="dob1" placeholder="Month">-
+    <input type="number" id="dob2" placeholder="Year">  <i> (DD-MM-YY)</i>
+      <br>
+      <br>
+      <label for="mobileNumber" >Mobile No.: </label>
+      <input type="number" id="mobileNumber" placeholder="+91">
+      <input type="tel" id="mobileNumber1"  placeholder="Enter Number" pattern="[0-9]{10}" maxlength="10" required title="10 digit Number only" >
+      <br>
+      <br>
+      <label for="email-id">Email id: </label>
+      <input type="email" id="email-id" placeholder="Enter your running email" pattern="[A-Za-z]-\d[0-9]-\d{@}">
+      <br>
+      <br>
+      <label for="pass">Password: </label>
+      <input type="password" id="pass" placeholder="Enter Password" name="pass" required>
+      <br>
+      <br>
+      <label >Gender: </label>
+      <input type="radio" name="gender" id="gender">
+      <label for="gender">Male</label>
+      <input type="radio" name="gender" id="Gender">
+      <label for="Gender">Female</label>
+      <input type="radio" name="gender" id="gender1">
+      <label for="gender1">other</label>
+
+
+      <br>
+      <br>
+
+
+      <label for="depart">Department: </label>   
+      
+      
+      <input type="checkbox" id="depart1" name="choose">
+      <label for="depart1">CSE</label>
+      <input type="checkbox" id="depart2" name="choose">
+      <label for="depart2">Civil</label>
+      <input type="checkbox" id="depart3" name="choose">
+      <label for="depart3">IT</label>
+      <br>
+
+     <div id="depar4"> 
+      <input type="checkbox" id="depart4" name="choose">
+      <label for="depart4">Mech</label>
+    </div>
+
+      <div id="depar5">
+        <input type="checkbox" id="depart5" name="choose">
+      <label for="depart5">AIML</label>
+      </div>
+
+
+      <br>
+      <br>
+      <label for="course">Course: </label>
+
+      <select name="Choosecourse" id="course">
+        <!-- <option value="ty"</option> -->
+        <option value="empty">----------------------------Select Current Course----------------------------</option>
+        <option value="btech">B-Tech</option>
+        <option value="bca">BCA</option>
+        <option value="bba">BBA</option>
+        <option value="mtech">M-Tech</option>
+        <option value="poly">Polytechnic</option>
+        <option value="diploma">Diploma</option>
+        
+      </select>
+      <br>
+      <br>
+
+      <label for="photo">Student Photo: </label>
+      <input type="file" id="photo" >
+      <br><br>
+      <label for="city">City Name: </label>
+      <input type="text" name="Name" id="city" placeholder="Enter your Current city Name">
+      <br><br>
+      <label for="address">Address: </label>
+      <input type="text" name="addressName" id="address" placeholder="Enter your address">
+      <br><br>
+
+      <input type="submit" value="Register" id="Sub" >
+      <input type="reset" value="Reset">
+   
+    
+
+
+
+
+
+
+   </form>
+      
+   </div>
+
+</body>
+</html>

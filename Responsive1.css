@@ -1,0 +1,1105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+html{
+    background-color: black;
+    color: white;
+
+
+}
+
+main{
+    width: 100%;
+}
+
+
+/* Navbar */
+
+.navbar{
+    width: 100%;
+    padding:0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+
+}
+
+.navbar .left h3{
+    font-size: 1.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+    opacity: 0.8;
+}
+
+.navbar .right{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    /* background-color: red; */
+}
+
+
+.navbar .right .cart{
+    background-color:rgb(47, 46, 46);
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem; 
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.navbar .right .cart i{
+    color: yellow;
+    font-size: 1.3rem;
+}
+
+
+
+.navbar .right .icon i{
+    background-color:rgb(47, 46, 46); 
+    font-size: 1.3rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;       
+}
+
+
+.navbar .right .icon #btn{
+    display: none;
+    color: black;
+    font-size: 0.8rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(228, 191, 72);
+    padding:0.5rem 1rem;
+    border-radius: 0.5rem;
+    opacity: 0.7;
+}
+
+.navbar .right .icon #btn:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+
+.navbar .right p{
+    display: none;
+    background-color:rgb(47, 46, 46);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;      
+}
+
+
+
+
+
+
+
+
+
+
+
+/* view 1 */
+
+
+main .view1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding:1rem;
+    /* background-color: blue; */
+}
+
+main .view1 .top{
+    width: 100%;
+
+}
+
+main .view1 .top img{
+    width: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+
+}
+
+main .view1 .bottom{
+    background-color:rgb(47, 46, 46);
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+
+.view1 .bottom .text1{
+    font-size: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+
+}
+
+.view1 .bottom .text2{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+
+.view1 .bottom .text2 h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.5rem;
+    font-weight:300;
+}
+
+.view1 .bottom .text2 p{
+    font-size: 1.5rem;
+    font-weight: 100;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    opacity: 0.6;
+}
+
+.view1 .bottom .text2 button {
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem; 
+    display:flex;
+    gap: 1rem;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+
+
+.view1 .bottom .text2 button h5{
+    font-size: 1.2rem;
+    font-family:'Space Mono' , 'IBM Plex Mono' , 'Courier New' , monospace;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 200;
+}
+
+
+.view1 .bottom .text2 button i{
+    
+    /* background-color:rgb(47, 46, 46) ; */
+    font-size: 1.5rem;
+    padding: 0.4rem;
+    border-radius: 100%;
+    font-weight:100;
+    border: 1px solid rgb(63, 61, 61);
+    color: white;
+    transition: transform 0.8s ease;
+
+
+
+}
+
+
+@keyframes iconMove{
+    from{
+            
+        transform: translateY(0);
+    }
+
+    to{
+        transform: translateY(-10px);
+
+    }
+}
+
+
+
+.view1 .bottom .text2 button:hover i{
+    animation: iconMove 0.6s ease-in-out;
+}
+
+
+
+/* view 2 */
+
+
+.view2{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.view2 .top{
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.view2 .top p{
+    font-size: 0.8rem;
+    font-weight: 350;
+    opacity: 0.6;
+    text-align: center;
+    letter-spacing: 0.05rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.view2 .top h2{
+    font-size: 2.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+
+
+
+.view2 .bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.view2 .bottom p{
+    font-size: 0.8rem;
+    font-weight: 350;
+    opacity: 0.6;
+    text-align: center;
+    letter-spacing: 0.05rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.view2 .bottom h2{
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+
+/* view 3 */
+
+main .view3{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+
+.view3 .bottom{
+    width: 100%;
+    background-color:rgb(47, 46, 46);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    
+}
+
+main .view3 .top img{
+    width: 100%;
+    border-radius: 1rem;
+
+}
+
+.view3 .bottom p{
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    font-family:'Space Mono' , 'IBM Plex Mono'  , monospace;
+    opacity: 0.7;
+
+}
+
+.view3 .bottom .text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.view3 .bottom .text h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    font-weight:360;
+    text-transform: uppercase;
+}
+
+
+.view3 .bottom .text p{
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    font-family: sans-serif;
+    text-transform:none;
+    opacity: 0.5;
+}
+
+
+
+
+/* view 4 */
+
+
+main .view4{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.view4 .bottom{
+    width: 100%;
+    background-color:rgb(47, 46, 46);
+    border-radius: 1rem;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    
+}
+
+main .view4 .top img{
+    width: 100%;
+    border-radius: 1rem;
+
+}
+
+.view4 .bottom p{
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    font-family:'Space Mono' , 'IBM Plex Mono'  , monospace;
+
+}
+
+.view4 .bottom .text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.view4 .bottom .text h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    font-weight:360;    
+    text-transform: uppercase;
+}
+
+
+.view4 .bottom .text p{
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    text-transform:none;
+    opacity: 0.5;
+    line-height: 1.3rem;
+}
+
+
+
+/* view 5 */
+
+
+.view5{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+
+.view5 .top h2{
+    font-size: 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    
+}
+
+
+.view5 .bottom{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.view5 .bottom .image-card{
+    border-radius: 1rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+.view5 .bottom .image-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 1rem;
+    background: #000;
+    overflow: hidden;
+}
+
+
+
+
+.view5 img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 1rem;
+    object-fit: cover;
+   
+}
+
+.view5 .overlay{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(8px);
+    color: white;
+    text-align: center;
+    padding: 0.8rem 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: -3rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+    transform: translateY(-50%);
+    
+}
+
+.view5 .overlay .name{
+    font-size:1.2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.view5 .overlay p{
+    font-size:1rem;
+    font-family:'Space Mono' , 'IBM Plex Mono' , 'Courier New' , monospace;
+    font-weight: 400;
+    text-transform: uppercase;
+
+}
+
+
+
+
+
+
+/* view 6 */
+
+.view6{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+
+}
+
+.view6 .top img{
+    width: 100%;
+    border-radius: 1rem ;
+    object-fit: cover;
+
+}
+
+main .view6 .bottom{
+    background-color:rgb(47, 46, 46);
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.view6 .bottom .text2{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.view6 .bottom .text2 p{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-family:'Space Mono' , 'IBM Plex Mono' , 'Courier New' , monospace;
+    font-weight: 500;
+    opacity: 0.6;
+}
+
+.view6 .bottom .text2 h1{
+    font-size: 2.5rem;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-weight: 400;
+}
+
+.view6 .bottom button{
+    max-width:fit-content;
+    font-size: 1.2rem;
+    font-family:'Space Mono' , 'IBM Plex Mono' , 'Courier New' , monospace;  
+    font-weight: 600; 
+    padding: 1rem;
+    letter-spacing: 0.2rem;
+    border-radius: 1rem;
+    background-color: transparent;
+    border:1px solid whitesmoke;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+/* view 7 */
+
+
+.view7{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.view7 .top{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: rgb(228, 191, 72);
+    padding: 3rem;  
+    border-radius: 1rem;
+}
+
+
+.view7 .top .part1 p{
+    font-size: 1.2rem;
+    font-weight: 100;
+    font-family:'Space Mono' , 'IBM Plex Mono'  , monospace; 
+    text-transform: uppercase; 
+    color: black;
+}
+
+.view7 .top .part1 h1{
+    font-size: 2.3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    font-weight: 450;
+    color: black;   
+}
+
+.view7 .part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.view7 .top .part2 button{
+    font-size: 1.5rem;
+    padding: 0.8rem 0.9rem;
+    align-items: center;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: black;
+    color: white;
+    font-family:'Space Mono' , 'IBM Plex Mono' , 'Courier New' , monospace; 
+    font-weight: 500;
+}
+
+
+/* view 8 */
+
+
+.view8{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+   
+}
+
+.view8 .left .top{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color:rgb(47, 46, 46);
+
+}
+
+.view8 .top p{
+    font-size: 1.2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 350;
+    letter-spacing: 0.2rem;
+    opacity: 0.8;
+}
+
+.view8 .top .icon{
+    font-size: 2rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.view8 .top .icon i{
+    border-radius: 50%;
+    border: 1px solid rgba(108, 104, 104, 0.71) ;
+    padding: 0.5rem;
+}
+
+.view8 .right{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.view8 .middle{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color:rgb(47, 46, 46);
+
+}
+
+
+.view8 .middle .part1,.part2,.part3{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.view8 .middle .part1 h3{
+    font-size: 1.4rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    opacity: 0.7;
+
+}
+
+
+.view8 .middle .part1 .text{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* .view8 .middle .part1 .text p{
+    font-size: 1.1rem;
+    font-family:'Space Mono' , 'IBM Plex Mono'  , monospace; 
+    font-weight: 200;
+    letter-spacing: 0.1rem;
+
+} */
+
+.view8 .middle .part1 button{
+    opacity: 1;
+    max-width: fit-content;
+    padding: 1rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    background-color: rgb(199, 199, 74);
+    transition: all ease 0.5s;
+    
+}
+
+.view8 .middle .part1 button:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+
+
+
+.view8 .middle .part1 button p{
+    font-size: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    opacity: 0.8;
+
+
+}
+
+
+
+.view8 .middle .part2 h3{
+    font-size: 1.4rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+
+.view8 .middle .part2 .text{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* .view8 .middle .part2 .text p{
+    font-size: 1.1rem;
+    font-family:'Space Mono' , 'IBM Plex Mono'  , monospace; 
+    font-weight: 200;
+    letter-spacing: 0.1rem;
+
+} */
+
+
+
+
+.view8 .middle .part3 h3{
+    font-size: 1.4rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+
+.view8 .middle .part3 .text{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* .view8 .middle .part3 .text p{
+    font-size: 1.1rem;
+    font-family:'Space Mono' , 'IBM Plex Mono'  , monospace; 
+    font-weight: 200;
+    letter-spacing: 0.1rem;
+    overflow: hidden;
+
+} */
+
+.view8 .middle  .text p:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+
+.view8 .middle  .text p{
+    font-size: 1.1rem;
+    font-family:'Space Mono' , 'IBM Plex Mono'  , monospace; 
+    font-weight: 200;
+    opacity: 0.6;
+    letter-spacing: 0.1rem;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    /* background-color: red; */
+    width: fit-content;
+}
+
+
+
+
+.view8  .middle .text p::after{
+    content: " ";
+    opacity: 0.6;
+    height: 0.5px;
+    width:0;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom:0;
+    transition: all ease 0.6s;
+    
+}
+
+.view8  .middle .text p:hover::after{
+    opacity: 1;
+    color: white;
+    width: 100%;
+}
+
+
+
+
+
+
+
+.view8 .bottom{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+    padding: 1.5rem;
+    text-align: center;
+    background-color:rgb(47, 46, 46);
+    border-radius: 1rem;
+    word-spacing: 0.1rem;
+    outline: none;
+
+}
+
+.view8 .bottom p span{
+    opacity: 0.7;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.view8 .bottom p a{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+
+}
+
+
+.view8 .bottom button{
+    max-width: fit-content;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    border: none;
+    background: none;
+   
+}
+
+.view8 .bottom button p{
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+
+.view8 .bottom  button i{
+    
+    /* background-color:rgb(47, 46, 46) ; */
+    font-size: 1.3rem;
+    padding: 0.4rem;
+    border-radius: 100%;
+    font-weight:100;
+    border: 1px solid rgb(113, 106, 106);
+    color: white;
+
+
+}
+
+
+
+
+
+
+
+
+
+@media (min-width:1000px){
+    main{
+
+       .navbar{
+        .right{
+
+            p{
+                display: block;
+            }
+            .icon{ 
+                #btn{
+                    display: block;
+                }
+                
+                i{
+                    display: none;
+                }
+            }
+        }
+       }
+
+
+
+
+
+
+        .view1{
+            flex-direction: row;
+            gap: 1rem;
+            padding: 1rem 1rem;
+
+        .top, 
+        .bottom{
+            width: 50%;
+            justify-content: space-between;
+        }
+
+        }
+        
+
+        .view2{
+            flex-direction: row;
+
+
+            .top,.bottom{
+                width: 50%;
+                flex-direction: row;
+                justify-content:space-around;
+                
+
+            }
+        }
+
+
+        .view3{
+            flex-direction: row-reverse;
+            gap: 1rem;
+
+
+            .bottom{
+                    justify-content: space-between;
+                    padding: 3rem 3rem;
+                }
+            .top, .bottom{
+                width: 50%;
+
+            
+            }
+
+            .flip{
+                display: flex;
+                gap: 1rem;
+            }
+        }
+
+        
+
+        .view4{
+            flex-direction: row;
+            gap: 1rem;
+
+            .bottom{
+                justify-content: space-between;
+                padding: 2rem 4rem;
+            }
+
+            .top,.bottom{
+                width: 50%;
+            }
+
+            .flip{
+                display: flex;
+                gap:4rem;
+            }
+        }
+
+
+
+        .view5{
+
+            .bottom{
+                flex-direction: row;
+               
+            }
+        }
+
+
+
+        .view6{
+            flex-direction: row;
+
+            .bottom{
+                justify-content: space-between;
+            }
+        }
+
+
+        .view7{
+
+            .top{
+                flex-direction: row;
+
+                .part1{
+                    width: 70%;
+
+                    h1{
+                        font-size: 3rem;
+                        word-spacing: 0.1rem;
+                        letter-spacing:0.3rem;
+                    }
+                }
+            }
+        }
+
+
+        .view8{
+            flex-direction: row;
+
+            .top,.bottom{
+                    width: 100%;
+                    height: 100%;
+            }
+
+            .right{
+                width: 100%;
+              
+                .middle,.bottom{
+                    flex-direction: row;
+                    justify-content: space-between;                  
+                }
+
+            }
+
+            .left{
+                width: 25%;
+                .top{
+                    width: 100%;
+                    justify-content: space-between;
+                }
+
+                
+            }
+
+            
+
+
+
+            
+        }
+
+       
+
+
+
+        
+    }
+
+
+}
+
+ 

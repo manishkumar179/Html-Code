@@ -1,0 +1,572 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+main{
+    height: 55%;
+    width: 100%;
+    background-color: rgb(248, 248, 245);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: rgba(220, 211, 223, 0.619);
+    padding: 0.2rem 2rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    
+}
+
+.navbar .box4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.navbar .box4 p{
+    font-size: 0.9rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    width: fit-content;
+    position: relative;
+    /* background-color: red; */
+}
+
+
+.navbar .box4 h6 #dot{
+    font-size: 15px;
+    padding: 0.2rem 0.3rem;
+    transition: all ease 0.5s;
+   
+    
+    
+}
+
+.navbar .box4 h6:hover #dot{
+    border-radius: 5px;
+    background-color: azure;
+    cursor: pointer;
+    border: none;
+    
+}
+
+.navbar .box4 p::after{
+    content: " ";
+    height: 1px;
+    width:0;
+    background-color: rgb(64, 67, 67);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all ease 0.6s;
+}
+
+.navbar .box4 p:hover::after{
+    opacity: 1;
+    width: 100%;
+}
+
+
+
+.navbar .box1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  
+}
+
+.navbar .box1 button{
+    width: 300px;
+    border-radius: 0.4rem;
+    border: 1px solid rgba(122, 119, 114, 0.705);
+    display: flex;
+    gap: 30px;
+    padding: 0.4rem 0.5rem;
+    cursor: pointer;
+    opacity: 0.7;
+    font-size: 0.8rem;
+    font-weight: 200;
+    background-color: rgb(215, 229, 236);
+}
+
+.navbar .box1 button:active{
+    scale: 0.95;
+}
+
+.navbar .box1 button:hover{
+    box-shadow: 1px 1px 1px rgb(7, 7, 7);
+
+}
+
+
+.navbar .box1 button i{
+    opacity: 0.7;
+    font-size: 0.8rem;
+    font-weight: 200;
+
+}
+
+
+
+.navbar .box1 img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.section1{
+    width: 100%;
+    height: 180px;
+    background-color: aliceblue;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+    /* border-top: 1px solid skyblue;
+    border-bottom: 1px solid darkturquoise; */
+    
+}
+
+.section1 .box img{
+    height:80px;
+    width: 80px;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+
+.section1 .box img:hover{
+    scale: 1.09;
+    cursor: pointer;
+}
+
+.section1 .box p{
+    font-size: 0.8rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+      
+}
+
+.section2{
+    border-radius: 0.5rem;
+    width: 100%;
+    height:fit-content;
+}
+
+.section2 img{
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+.section2 img:hover{
+    scale: 1.01;
+}
+
+
+
+.page2{
+    padding: 0.5rem;
+}
+
+.section3{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.page2 .section3 .text h1{
+    font-size: 1.7rem;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    text-transform:capitalize;
+    -webkit-text-stroke: 1px rgb(250, 133, 0);
+    color: transparent;
+}
+
+.section3 .imageContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+
+}
+
+.section3 .imageContainer .imgBox{
+    width: 260px;
+    height: 310px;
+    border: 1px solid rgb(168, 163, 163);
+    overflow: hidden;
+    padding: 0.5rem 0.5rem;
+    border-radius: 1rem;
+
+}
+
+
+.section3 .imageContainer .imgBox img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+
+}
+
+.section3 .imageContainer .imgBox img:hover{
+    scale: 1.01;
+    cursor: pointer;
+}
+
+.section3 .imageContainer .imgBox h3{
+    font-size: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    margin: 0.5rem;
+    
+}
+
+.section3 .imageContainer .imgBox p{
+    font-size: 0.8rem;
+    margin: 0.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+}
+
+.section3 .imageContainer .imgBox .locDate{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section3 .imageContainer .imgBox .locDate p{
+    font-size: 0.6rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+
+
+.section3 .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.section3 .btn button{
+    font-size: 1.2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    padding: 0.4rem 1rem;
+    border-radius: 10px;
+    border: none;
+    color: rgb(0, 0, 0);
+    background-color: antiquewhite;
+    transition: color ease 0.4s;
+    
+}
+
+.section3 .btn button:hover{
+    scale: 1.01;
+    background-color: rgb(43, 225, 253);
+    color: white;
+    cursor: pointer;
+    border: none;
+
+}
+
+.section3 .btn button:active{
+    scale:0.95;
+}
+
+
+.section3 .middle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.section3 .middle .left img{
+    height:150px;
+    cursor: pointer;
+    object-fit: cover;
+    object-position: center;
+}
+
+.section3 .middle .right{
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+
+}
+.section3 .middle .right .playstore{
+    display: flex;
+    gap: 1rem;
+    
+
+}
+
+.section3 .middle .right .divmid{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+
+}
+.section3 .middle .right .divmid h5{
+    font-size: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.section3 .middle .right .playstore img{
+    height: 40px;
+    width: 150px;
+    cursor: pointer;
+}
+
+hr{
+    height:120%;
+    border: 1px solid rgb(171, 163, 163);
+}
+
+.section3 .middle .right h1{
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+
+}
+
+.section3 .middle .right p{
+    font-size: 1rem;
+    font-family: monospace;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: rgb(107, 108, 108);
+}
+
+
+.page3{
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    padding: 0.5rem;
+    
+}
+.page3 .up{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    height: 40px;
+    width: 100%;
+    padding-right: 1rem;
+
+}
+
+.page3 .up .img2{
+    display: flex;
+    gap: 0.8rem;
+}
+
+.page3 .up .img2 img{
+    height: 20px;
+}
+
+.page3 .up h3{
+    font-size: 1.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+.page3 .down{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.page3 .down .divim{
+    height: 210px;
+    width: 250px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 1rem;
+
+}
+
+.page3 .down .divim #overlay{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background:rgba(184, 184, 184, 0.5);
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    text-transform:capitalize;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    opacity: 0;
+    transition: all ease 0.4s;
+
+}
+
+.page3 .down .divim:hover #overlay{
+    cursor: pointer;
+    opacity: 1;
+    color: black;
+}
+
+.page3 .down .divim:hover img{
+    scale: 1.04;
+}
+
+
+
+.page3 .down .downleft{
+
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-left: 2rem;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+
+
+.page3 .down .downright{
+
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-left: 2rem;
+    
+    
+}
+
+
+
+ .page3 .down .divim img{
+    height:100%;
+    width: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.downright img{
+    height: 200px;
+    width: 250px;
+    border-radius: 1rem;
+
+}
+
+footer{
+    padding: 2rem;
+    height: fit-content;
+    background-color: rgb(232, 231, 231);
+    padding: 0.5rem;
+}
+
+footer .footerpart1{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    padding: 0.5rem;
+}
+
+footer .footerpart1 .box{
+    display:flex;
+    flex-direction: column;
+}
+
+footer .footerpart1 .box h1{
+    font-size: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    margin-bottom: 0.7rem;
+    height: fit-content;
+    width: fit-content;
+}
+
+footer .footerpart1 .box p{
+    cursor: pointer;
+    width: fit-content;
+    font-size: 0.8rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+footer .footerpart1 .box p:hover{
+    opacity: 1;
+    scale: 1.04;
+}
+footer .footerpart1 .box h1:hover{
+    scale: 1.04;
+    cursor: pointer;
+}
+
+footer .footerpart1 .box  #im{
+
+    overflow: hidden;
+    height: 50px;
+    margin-top: 0.2rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.9rem;
+
+}
+
+
+.blink{
+    border-bottom-color:red ;
+    scale: 1.1;
+}

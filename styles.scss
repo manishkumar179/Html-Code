@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+// Nesting : code modulization
+
+main{
+
+    h1{
+        color: blue;
+    }
+
+    button{
+        padding: 15px 30px;
+        font-size: 30px;
+        border-radius: 20px;
+        border: none;
+        background-color: aqua;
+        color: red;
+        margin: 20px 30px;
+        cursor: pointer;
+    }
+}
+
+// mixin
+
+
+@mixin flex-center(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+// .red{
+//     height: 400px;
+//     width: 400px;
+//     background-color: red;
+
+//    @include flex-center();
+
+//     .green{
+//         height: 200px;
+//     width: 200px;
+//     background-color:green;
+
+//     @include flex-center();
+
+//     .blue{
+//         height: 100px;
+//     width: 100px;
+//     background-color: blue;
+
+    
+//     }
+
+//     }
+
+
+// }
+
+
+@mixin button-color($bg-color:red){
+    padding: 15px 30px;
+    font-size: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color:$bg-color;
+    color: white;
+    margin: 20px 30px;
+    cursor: pointer;
+}
+
+button.red{
+    @include button-color();
+}
+
+button.blue{
+    @include button-color(blue);
+}
